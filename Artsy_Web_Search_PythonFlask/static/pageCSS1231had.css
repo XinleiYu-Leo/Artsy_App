@@ -1,0 +1,234 @@
+body{
+    background-color: white;
+    margin-left: 0px; 
+    margin-right: 0px;
+
+}
+
+header{
+    background-color: rgb(251, 251, 251);
+    text-align: left;
+    margin-top: 0px;
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    display: flex;
+    margin-bottom: 0px;
+}
+
+p{
+    margin-left: 650px;
+}
+p2{
+    margin-left: 20px;
+    margin-top:15px;
+}
+.child p{
+    margin-left:0px;
+}
+img{
+    margin-top: 3px;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+}
+
+a{
+    margin-top: 5px;
+    width: 15px;
+}
+
+div{
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+section{
+    align-content: center;
+    margin-left: 300px;
+}
+
+searchButton{
+    background-image: url('/static/imag/search_icon.png');
+    background-repeat: no-repeat;
+}
+
+.container{
+    position: relative;
+    width: 500px;
+    background-color: transparent;
+}
+
+#clearicon{
+    margin-left:950px;
+}
+
+.container input{
+    background-color: transparent;
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+    font-size: 18px;
+    margin-top:10px;
+    margin-left:960px;
+    z-index: 1;
+    color:grey;
+    
+}
+
+.container button{
+    background-color: transparent;
+    border-color: transparent;
+    border-style: solid;
+    position: absolute;
+    margin-left: 450px;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+.container textarea{
+    position: absolute;
+    background-color: white;
+    border-radius: 32px;
+    color:black;
+    border-color: grey;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    height: 40px;
+    padding-inline-start: 50px;
+    padding-inline-end: 44px;
+    position: relative;
+    width: 450px;
+    margin: 0 auto;
+    display: flex;
+    margin-left: 450px;
+    z-index: 0;
+    outline-color: orange;
+}
+
+textarea{
+    background-color: white;
+    border-radius: 32px;
+    color:black;
+    border-color: grey;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    height: 50%;
+    padding-inline-start: 52px;
+    padding-inline-end: 44px;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+  
+input:hover{
+    color: rgb(0, 0, 0);
+}
+
+.kuang{
+    border:1px solid white;
+    width: 1200px;
+    height: 300px;
+    overflow:auto;
+    z-index: -1;
+    margin-left: 100px;
+    padding-left: 0px;
+    padding-top: 10px;
+    visibility: hidden;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.button:hover{
+    background-color: black;
+}
+
+.kuang img{
+    border-radius:100%;
+    margin-top:0px;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    padding: 0px;
+    border: 5px white;
+    box-shadow: 0px 0px 0px 2px rgb(255, 255, 255);
+}
+
+.kuang p{
+    font-size: 24px;
+    color: white;
+}
+
+.parent{
+    width: 2800px;
+    height: 20px;
+    z-index: -1;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.fot{
+    height: 100px;
+    width:300px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+
+.kuang .child:hover{
+    background-color: rgb(17, 34, 60);
+}
+
+
+#load{
+    width: 40px;
+    height: 40px;
+}
+
+#load2{
+    width: 40px;
+    height: 40px;
+}
+
+
+.parent {
+    border: 1px solid black;
+    margin: 0px;
+    padding: 0px;
+    height: 0px;
+    text-align: center;
+    border-color: transparent;
+
+  }
+
+.child {
+    display: inline-block;
+    border: 1px solid rgb(253, 253, 253);
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    border-color: transparent;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  #text1{
+      margin-top: 50px;
+      margin-bottom: 0px;
+      font-size: 60px;
+      font-weight: 500;
+  }
+  #text2{
+      margin-left:700px;
+      margin-top: 0px;
+  }
+
+  #text3{
+    margin-left:400px;
+    width: 600px;
+  }

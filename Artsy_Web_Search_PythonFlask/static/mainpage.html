@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/static/pageCSS1231had.css">
+    <style>
+       
+
+    </style>
+</head>
+<body>
+    <header style="background-color: grey;"><p1>Artist Search</p1></header>
+    
+
+        <form id="form" method="post">
+        <div class="container" style="margin-bottom: 50px;">     
+            <!--<input type="reset" value="X">-->
+            <button type="submit"><img src="./static/img/search_icon.png" width="10" height="10"></button>
+            <button id ="clearicon" type="submit" onclick="cleartext()"><img src="./static/img/clear_icon.png" width="10" height="10"></button>
+            <textarea id= "textarea1" type="text" autocomplete="off" spellcheck="false" role="combobox" required></textarea>
+        </div>
+        </form>
+        <img id="load" style="margin-left: 600px" src ="./static/img/loading.gif">
+        
+        <p id="warmning" style="background-color: gray; font-weight: bold; visibility: hidden; align-self: center; width: 200px; border-radius: 20px; height: 50px; text-align: center;margin-left:600px;"></p>
+        
+        <div class="kuang">
+            <div class="parent">
+                <div class="child" id="0" onclick="getEndpoint('0')" style="background-color: #1c5277; visibility: hidden;" ><img id="img0" src="/static/img/artsy_logo.svg"><p id="p0"></p></div> 
+                <div class="child" id="1" onclick="getEndpoint('1')" style="background-color: #1c5277; visibility: hidden" ><img id="img1" src="/static/img/artsy_logo.svg"><p id="p1"></p></div>
+                <div class="child" id="2" onclick="getEndpoint('2')" style="background-color: #1c5277; visibility: hidden" ><img id="img2" src="/static/img/artsy_logo.svg"><p id="p2"></p></div>
+                <div class="child" id="3" onclick="getEndpoint('3')" style="background-color: #1c5277; visibility: hidden" ><img id="img3" src="/static/img/artsy_logo.svg"><p id="p3"></p></div>
+                <div class="child" id="4" onclick="getEndpoint('4')" style="background-color: #1c5277; visibility: hidden" ><img id="img4" src="/static/img/artsy_logo.svg"><p id="p4"></p></div>
+                <div class="child" id="5" onclick="getEndpoint('5')" style="background-color: #1c5277; visibility: hidden" ><img id="img5" src="/static/img/artsy_logo.svg"><p id="p5"></p></div>
+                <div class="child" id="6" onclick="getEndpoint('6')" style="background-color: #1c5277; visibility: hidden" ><img id="img6" src="/static/img/artsy_logo.svg"><p id="p6"></p></div>
+                <div class="child" id="7" onclick="getEndpoint('7')" style="background-color: #1c5277; visibility: hidden" ><img id="img7" src="/static/img/artsy_logo.svg"><p id="p7"></p></div>
+                <div class="child" id="8" onclick="getEndpoint('8')" style="background-color: #1c5277; visibility: hidden" ><img id="img8" src="/static/img/artsy_logo.svg"><p id="p8"></p></div>
+                <div class="child" id="9" onclick="getEndpoint('9')" style="background-color: #1c5277; visibility: hidden" ><img id="img9" src="/static/img/artsy_logo.svg"><p id="p9"></p></div>
+            </div>
+        </div>
+        
+        <img id="load2" style="margin-left: 600px" src ="./static/img/loading.gif">
+        <p id="text"></p><br>
+        <p id="text2"></p>
+        <p id="text3"></p>
+    <footer><p style="color:white;">Power By</p> <a style="color:white;" href="https://www.artsy.net/"><img src="/static/img/artsy_logo.svg"></a><p2 style="color:white;" href="https://www.artsy.net/">Artsy</p2></footer>
+    <script src="/static/pagejs.js"></script>
+</body>
+</html>

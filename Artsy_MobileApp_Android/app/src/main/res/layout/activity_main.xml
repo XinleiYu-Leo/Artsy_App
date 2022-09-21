@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/mainProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:indeterminateTint="@color/actionbarColor"
+        android:layout_marginTop="300dp"
+        android:layout_marginBottom="300dp"
+        />
+
+
+    <TextView
+        android:id="@+id/todayText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="TextView" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:background="@drawable/background_with_border"
+        android:text="FAVORITES" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favorite_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/artsyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:textStyle="italic"
+        android:text="Powerd by Artsy" />
+</LinearLayout>

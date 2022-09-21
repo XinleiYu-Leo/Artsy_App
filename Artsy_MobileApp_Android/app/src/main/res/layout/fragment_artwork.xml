@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:orientation="vertical" >
+
+    <ProgressBar
+        android:id="@+id/artworkProgressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:indeterminateTint="@color/actionbarColor"
+        android:layout_marginTop="220dp"
+        />
+    <TextView
+        android:id="@+id/artworkProgressBarLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:textSize="12sp"
+        android:gravity="center_horizontal"
+        android:textColor="#696969"
+        android:layout_marginBottom="300dp"
+        android:text="loading..." />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/artwork_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/noArtwork"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#EFEFEF"
+        android:textSize="20sp"
+        android:gravity="center_horizontal"
+        android:textColor="#696969"
+        android:layout_marginTop="70sp"
+        android:text="No Artwork Available" />
+
+</LinearLayout>

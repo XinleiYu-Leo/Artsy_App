@@ -1,0 +1,235 @@
+.customer-nav{
+    background-color: rgba(236, 236, 236, 0.755);
+    height: 40px;
+}
+
+.black_letters{
+    color: black;
+}
+
+.white_letters{
+    color: white;
+   margin: 5px;
+}
+input{
+    width: 100%;
+    margin-left: 0%;
+    margin-right:0%;
+}
+.input-group{
+    margin:0%
+}
+
+#name0{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+
+.carousel-inner{
+    width:100%;
+    max-height: 600px !important;
+    line-height: 200px;
+  }
+
+.modalcus{
+    border: solid 0.5px grey;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.grey_color{
+    color:  grey;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #4e84a8 !important;
+}
+
+.search_btn{
+    width: 10%;
+    height: 100%;
+
+}
+
+.customer_div{
+    width: 100px;
+}
+
+.dark_blue{
+    background-color: rgb(10, 36, 75);
+}
+
+#smallimg{
+    height: 15px;
+    width:15px;
+}
+img{
+    height: 600px;
+    width: auto;
+}
+
+.blankplacer{
+    background-color: transparent;
+    padding: 50px;
+}
+
+.customer-overflow{
+    overflow: scroll;
+}
+
+.coloredbox{
+    background-color: rgb(75, 116, 218);
+}
+
+.blankplacer2{
+    background-color: transparent;
+    padding: 10px;
+}
+
+.blankplacer3{
+    background-color: transparent;
+    padding: 6px;
+}
+
+.card-img-top{
+    width: 100%;
+    height: auto;
+}
+
+.center {
+    display: block;
+    margin-left: 0.8%;
+    margin-right: 0%;
+    width: 97%;
+}
+
+.img-size{
+    width: 100%;
+    height: auto;
+}
+
+.card{
+    height: 245px;
+    width: 290px;
+    border-color: transparent;
+}
+.col-sm-3{
+    border: solid 0.5px grey;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right:20px;
+    max-width: max-content;
+}
+
+.col-md-3{
+    margin-right:8px;
+}
+
+.card-body1:hover{
+    background-color: #133247 !important;
+    
+}
+
+.customer-overflow{
+    height: 300px;
+}
+
+p{
+    color:white;
+    font-size: 13px;
+    text-align: left;
+}
+
+.cusbtn_color{
+    background-color:#205375;
+}
+
+.lettr_info{
+    text-align: center;
+}
+
+.blankplacer4{
+    background-color: transparent;
+    padding: 150px;
+}
+
+.wow{
+    font-size: 20px;
+    background-color: white !important;
+}
+
+.wow2{
+    font-size: 14px;
+    background-color: white !important;
+}
+
+.card-body:visited{
+    background-color: #112B3C !important;
+}
+.make_it_small{
+    height: 15px;
+    width: 15px;
+}
+
+.larger{
+    width: 100px;
+}
+
+.spinner-border{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.spacer{
+    margin-bottom: 360px;
+    background-color: transparent;
+}
+
+.text-color{
+    color: black !important;
+}
+
+.imgsize{
+    height: 40px;
+    width: auto;
+}
+
+.active_color{    
+    background-color: #205375 !important    ;
+}
+
+.active_color:hover{    
+    color:white !important ;
+}
+
+.btn-primary{
+    background-color:#205375 !important ;
+}
+
+.visitedcard{
+    background-color: #112B3C !important;
+}
+
+.cardbodaycolor{
+    background-color:#205375;
+}
+
+::placeholder { 
+    color: grey;
+}
+
+.card-body{
+    border-color: 2px solid rgb(163, 163, 163);
+}
+
+.card-body2{
+    border-color: 2px solid rgb(163, 163, 163);
+}
+
+
+.col-sm-3{
+    padding: 0%;
+}

@@ -1,0 +1,434 @@
+<nav class="fixed-top navbar navbar-default customer-nav">
+  <div class="container-fluid">
+    <p class="black_letters">Artist Search</p>
+  </div>
+</nav>
+
+<div class="blankplacer"> 
+</div>
+
+
+<form class="postion-fixed" #myform = "ngForm" (ngSubmit) = "onSubmit(myform)">
+  <div class="container ">
+    <div class="input-group row" >
+        <input name="inputbox" type="text" class="form-control rounded grey_color"  placeholder="Please enter an artist name." aria-label="Search" aria-describedby="search-addon" [(ngModel)]="checkField" oninput="typeIn()"  ngModel/>
+    </div>
+
+    <div class="blankplacer3"> 
+    </div>
+
+    <div class="row d-flex justify-content-center ">
+      <div class=" col-xs-2" style="margin:0px;" > 
+        <button type="submit" class=" btn search_btn btn-primary cusbtn_color larger d-flex"   [disabled]="checkField === ''">Search<div class="spinner-border make_it_small" role="status" [style]= "display_load">
+          <span class="sr-only ">Loading...</span>
+        </div></button>
+      </div>
+      <div class="col-xs-2">
+        <button type="reset" (click)="reset_all()" class="offset-1 btn btn-secondary col-sm-0.8">Clear</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+<div class="blankplacer2"> 
+</div>
+
+<div class="alert alert-danger" role="alert" [style]= "display_noresult">
+  No result.
+</div>
+
+
+<div class="container" [style]= "container_sty">
+  <div class ="row">
+    <div class="col-md-12">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li id="bar0" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li id="bar1" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li id="bar2" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li id="bar3" data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li id="bar4" data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li id="bar5" data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      <li id="bar6" data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+      <li id="bar7" data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+      <li id="bar8" data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+      <li id="bar9" data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+    </ol>
+    <div class="carousel-inner">
+
+      <div [class]="display_c0" (click)="loadArtistInfo('0')" >
+        <img class="d-block w-100" [src]="info_path.path0" alt="" [style]="display_sm_box0">
+        <div class ="carousel-caption d-none d-md-block " [style]="display_sm_box0">
+          <p id="name0" [innerHTML]="htmlStr0"></p>
+        </div>
+      </div>
+      <div [class]="display_c1" (click)="loadArtistInfo('1')">
+        <img class="d-block w-100" [src]="info_path.path1" alt="" [style]="display_sm_box1">
+        <div class ="carousel-caption d-none d-md-block " [style]="display_sm_box1">
+          <p id="name0" [innerHTML]="htmlStr1" ></p>
+        </div>
+      </div>
+
+      <div [class]="display_c2" (click)="loadArtistInfo('2')" >
+        <img class="d-block w-100" [src]="info_path.path2" alt="" [style]="display_sm_box2">
+        <div class ="carousel-caption d-none d-md-block " [style]="display_sm_box2">
+          <p id="name0" [innerHTML]="htmlStr2"></p>
+        </div>
+      </div>
+
+      <div [class]="display_c3" (click)="loadArtistInfo('3')" >
+        <img class="d-block w-100" [src]="info_path.path3" alt="" [style]="display_sm_box3">
+        <div class ="carousel-caption d-none d-md-block"  [style]="display_sm_box3">
+          <p id="name0" [innerHTML]="htmlStr3"></p>
+        </div>
+      </div>
+
+      <div [class]="display_c4" (click)="loadArtistInfo('4')" >
+        <img class="d-block w-100" [src]="info_path.path4" alt="" [style]="display_sm_box4">
+        <div class ="carousel-caption d-none d-md-block " [style]="display_sm_box4">
+          <p id="name0" [innerHTML]="htmlStr4"></p>
+        </div>
+      </div>
+
+      <div [class]="display_c5" (click)="loadArtistInfo('5')" >
+        <img class="d-block w-100" [src]="info_path.path5" alt="">
+        <div class ="carousel-caption d-none d-md-block " [style]="display_sm_box5">
+          <p id="name0" [innerHTML]="htmlStr5"></p>
+        </div>
+      </div>
+
+      <div [class]="display_c6" (click)="loadArtistInfo('6')" >
+        <img class="d-block w-100" [src]="info_path.path6" alt="">
+        <div class ="carousel-caption d-none d-md-block " [style]="display_sm_box6">
+          <p id="name0" [innerHTML]="htmlStr6"></p>
+        </div>
+      </div>
+
+      <div [class]="display_c7" (click)="loadArtistInfo('7')" >
+        <img class="d-block w-100" [src]="info_path.path7" alt="">
+        <div class ="carousel-caption d-none d-md-block " [style]="display_sm_box7">
+          <p id="name0" [innerHTML]="htmlStr7"></p>
+        </div>
+      </div>
+
+      <div [class]="display_c8" (click)="loadArtistInfo('8')" >
+        <img class="d-block w-100" [src]="info_path.path8" alt="">
+        <div class ="carousel-caption d-none d-md-block " [style]="display_sm_box8">
+          <p id="name0" [innerHTML]="htmlStr8"></p>
+        </div>
+      </div>
+
+      <div [class]="display_c9" (click)="loadArtistInfo('9')">
+        <img class="d-block w-100" [src]="info_path.path9" alt="">
+        <div class ="carousel-caption d-none d-md-block " [style]="display_sm_box9">
+          <p id="name0" [innerHTML]="htmlStr9"></p>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+</div>
+</div>
+
+
+         
+
+<div class="blankplacer2"> 
+</div>
+
+<div class="d-flex align-items-center justify-content-center">
+  <div class="spinner-border" role="status" [style]= "display_load2">
+    <span class="sr-only ">Loading...</span>
+  </div>
+
+</div>
+
+<div class ="container-fluid" style=" width: 79%;">
+<ul class="nav nav-pills mb-3 nav-fill" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation" [style]= "display_nav">
+    <a [class]="navbar1" id="pills-home-tab"  data-bs-toggle="pill" (click)="switchToArtInfo()" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Artist Info</a>
+  </li>
+  <li class="nav-item" role="presentation" [style]= "display_nav">
+    <a [class]="navbar2" id="pills-profile-tab" data-bs-toggle="pill" (click)="switchToArtwork()" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="true">Artworks</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div [class]="artistInfo1" [style]= "artHTML1_style" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" [innerHTML]="artinfoHTML1"></div>
+  <div [class]="artistInfo2" [style]= "artHTML2_style" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" [innerHTML]="artinfoHTML2"></div>
+  <div [class]="artistInfo3" [style]= "artHTML3_style" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" [innerHTML]="artinfoHTML3"></div>
+
+ <div class="d-flex justify-content-center">
+  <div [class]="display_noresult2_class" role="alert" [style]= "display_noresult2">
+    No result.
+  </div>
+ </div>
+
+  
+  <div [class]="artworkInfo">
+    <div class="row d-flex justify-content-center" >
+    
+    <div class="col-sm-3" [style]="display_artwork0">
+    <div class="card spacer " >
+      <img class="card-img-top center" [src]="info_path.artwork0" alt="Card image cap">
+      
+      <div class="card-body d-flex flex-end justify-content-center " >  
+          <p class="card-title text-color" [innerHTML]="artworktext0"></p>
+          <p class="card-text"></p>
+      </div>
+      <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-primary" data-toggle="modal" (click)="genes('0')" data-target="#exampleModalScrollable" style="width: 90%;">
+        Categories
+      </button>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-sm-3"[style]="display_artwork1">
+    <div class="card spacer" >
+      <img class="card-img-top center" [src]="info_path.artwork1" alt="Card image cap">
+      <div class="card-body d-flex justify-content-center" >
+        <p class="card-title text-color" [innerHTML]="artworktext1"></p>
+        <p class="card-text"></p>
+      </div>
+      <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-primary" data-toggle="modal" (click)="genes('1')" data-target="#exampleModalScrollable" style="width: 90%;">
+        Categories
+      </button>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-sm-3" [style]="display_artwork2">
+    <div class="card spacer" >
+      <img class="card-img-top center" [src]="info_path.artwork2" alt="Card image cap">
+      <div class="card-body d-flex justify-content-center">
+        <p class="card-title text-color" [innerHTML]="artworktext2"></p>
+        <p class="card-text"></p>
+      </div>
+      <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-primary" data-toggle="modal" (click)="genes('2')" data-target="#exampleModalScrollable" style="width: 90%;">
+        Categories
+      </button>
+    </div>
+    </div>
+    </div>
+
+    <div class="col-sm-3" [style]="display_artwork3">
+      <div class="card spacer" >
+        <img class="card-img-top center" [src]="info_path.artwork3" alt="Card image cap">
+        <div class="card-body d-flex justify-content-center">
+          <p class="card-title text-color" [innerHTML]="artworktext2"></p>
+          <p class="card-text"></p>
+        </div>
+        <div class="d-flex justify-content-center">
+        <button type="button" class="btn btn-primary" data-toggle="modal" (click)="genes('3')" data-target="#exampleModalScrollable" style="width: 90%;">
+          Categories
+        </button>
+      </div>
+      </div>
+      </div>
+
+      <div class="col-sm-3" [style]="display_artwork4">
+        <div class="card spacer" >
+          <img class="card-img-top center" [src]="info_path.artwork4" alt="Card image cap">
+          <div class="card-body d-flex justify-content-center">
+            <p class="card-title text-color" [innerHTML]="artworktext4"></p>
+            <p class="card-text"></p>
+          </div>
+          <div class="d-flex justify-content-center">
+          <button type="button" class="btn btn-primary" data-toggle="modal" (click)="genes('4')" data-target="#exampleModalScrollable" style="width: 90%;">
+            Categories
+          </button>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-sm-3" [style]="display_artwork5">
+          <div class="card spacer" >
+            <img class="card-img-top center" [src]="info_path.artwork5" alt="Card image cap">
+            <div class="card-body d-flex justify-content-center">
+              <p class="card-title text-color" [innerHTML]="artworktext5"></p>
+              <p class="card-text"></p>
+            </div>
+            <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-primary" data-toggle="modal" (click)="genes('5')" data-target="#exampleModalScrollable" style="width: 90%;">
+              Categories
+            </button>
+          </div>
+          </div>
+          </div>
+
+          <div class="col-sm-3" [style]="display_artwork6">
+            <div class="card spacer" >
+              <img class="card-img-top center" [src]="info_path.artwork6" alt="Card image cap">
+              <div class="card-body d-flex justify-content-center">
+                <p class="card-title text-color" [innerHTML]="artworktext6"></p>
+                <p class="card-text"></p>
+              </div>
+              <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-primary" data-toggle="modal" (click)="genes('6')" data-target="#exampleModalScrollable" style="width: 90%;">
+                Categories
+              </button>
+            </div>
+            </div>
+            </div>
+
+            <div class="col-sm-3" [style]="display_artwork7">
+              <div class="card spacer" >
+                <img class="card-img-top center" [src]="info_path.artwork7" alt="Card image cap">
+                <div class="card-body d-flex justify-content-center">
+                  <p class="card-title text-color" [innerHTML]="artworktext7"></p>
+                  <p class="card-text"></p>
+                </div>
+                <div class="d-flex justify-content-center">
+                <button type="button" class="btn btn-primary" data-toggle="modal" (click)="genes('7')" data-target="#exampleModalScrollable" style="width: 90%;">
+                  Categories
+                </button>
+              </div>
+              </div>
+              </div>
+
+              <div class="col-sm-3" [style]="display_artwork8">
+                <div class="card spacer" >
+                  <img class="card-img-top center" [src]="info_path.artwork8" alt="Card image cap">
+                  <div class="card-body d-flex justify-content-center">
+                    <p class="card-title text-color" [innerHTML]="artworktext8"></p>
+                    <p class="card-text"></p>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                  <button type="button" class="btn btn-primary" data-toggle="modal" (click)="genes('8')" data-target="#exampleModalScrollable" style="width: 90%;">
+                    Categories
+                  </button>
+                </div>
+                </div>
+                </div>
+
+                <div class="col-sm-3" [style]="display_artwork9">
+                  <div class="card spacer" >
+                    <img class="card-img-top center" [src]="info_path.artwork9" alt="Card image cap">
+                    <div class="card-body d-flex justify-content-center">
+                      <p class="card-title text-color" [innerHTML]="artworktext9"></p>
+                      <p class="card-text"></p>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" (click)="genes('9')" data-target="#exampleModalScrollable" style="width: 90%;">
+                      Categories
+                    </button>
+                  </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+<div class="blankplacer4"> 
+</div>
+
+<!-- Button trigger modal -->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <img class="imgsize" [src]="modalimg">
+        <p class="modal-title text-color" id="exampleModalScrollableTitle" [innerHTML] ="modaltitle"></p>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div [class]="display_noresult3_class" role="alert" [style]= "display_noresult3">
+        No Categories.
+      </div>
+
+      <div class="modal-body row d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
+          <div class="spinner-border" role="status" [style]= "display_load3">
+            <span class="sr-only ">Loading...</span>
+          </div>
+       </div>
+        
+       <div class="modalcus" >
+        <div class="card" [style]="modalbox0">
+          <img [src]="modalimg0" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-color" [innerHTML]="modaltext0"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modalcus">
+        <div class="card" [style]="modalbox1">
+          <img [src]="modalimg1" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-color" [innerHTML]="modaltext1"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modalcus">
+        <div class="card" [style]="modalbox2">
+          <img [src]="modalimg2" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-color" [innerHTML]="modaltext2"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modalcus">
+        <div class="card" [style]="modalbox3">
+          <img [src]="modalimg3" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-color" [innerHTML]="modaltext3"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modalcus">
+        <div class="card" [style]="modalbox4">
+          <img [src]="modalimg4" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text text-color" [innerHTML]="modaltext4"></p>
+          </div>
+        </div>
+      </div>
+
+      
+
+        
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="page-footer fixed-bottom"> 
+  <div class="row dark_blue d-flex justify-content-center"> 
+    <div class="">
+      <p class="white_letters" >Powered by</p>
+    </div>
+    <div class="">
+      <a href="https://www.artsy.net/"><img src="./assets/img/artsy_logo.svg"  class="img-fluid" id="smallimg" alt="Responsive image"></a>
+    </div>
+    <div class="">
+      <a href="https://www.artsy.net/"><p class="white_letters text-center"> Artsy.</p></a>
+    </div>
+  </div>
+</footer>
+
+<router-outlet></router-outlet>

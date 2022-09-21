@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/drawable-v24/background_with_shadow.xml" value="0.1" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1962962962962963" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/drawable/alert_circle_outline.xml" value="0.1" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/drawable/background_with_border.xml" value="0.1" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/drawable/chevron_right.xml" value="0.1" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1962962962962963" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/drawable/launch_screen.xml" value="0.2675925925925926" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/drawable/magnify.xml" value="0.1962962962962963" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/drawable/new_ic_launcher_foreground.xml" value="0.1962962962962963" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/drawable/palette_outline.xml" value="0.1" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/drawable/star.xml" value="0.1" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/drawable/star_outline.xml" value="0.1" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/layout/activity_artist.xml" value="0.2477355072463768" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/layout/activity_artist_actionbar.xml" value="0.3109375" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/layout/activity_main.xml" value="0.4986413043478261" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/layout/activity_main_actionbar.xml" value="0.32760416666666664" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/layout/activity_main_searchbar.xml" value="0.2672239108409321" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/layout/activity_search_result.xml" value="0.3109375" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/layout/activity_splash.xml" value="0.32760416666666664" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/layout/artwork_recyclerview_item.xml" value="0.3109375" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/layout/background_with_shadow.xml" value="0.3109375" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/layout/dialog.xml" value="0.1" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/layout/favorite_recyclerview_item.xml" value="0.38385416666666666" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/layout/fragment_artist_info.xml" value="0.39402173913043476" />
+        <entry key="..\:/Users/D7/Desktop/20226232/App/app/src/main/res/layout/searchresult_recyclerview_item.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1545" />
+        <entry key="app/src/main/res/layout/activity_artist.xml" value="0.234375" />
+        <entry key="app/src/main/res/layout/activity_artist_actionbar.xml" value="0.146875" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.146875" />
+        <entry key="app/src/main/res/layout/activity_main_actionbar.xml" value="0.11041666666666666" />
+        <entry key="app/src/main/res/layout/activity_main_searchbar.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_search_result.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/artwork_recyclerview_item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/dialog.xml" value="0.11041666666666666" />
+        <entry key="app/src/main/res/layout/favorite_recyclerview_item.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_artist_info.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_artwork.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/searchresult_recyclerview_item.xml" value="0.165" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        header {
+            background-color: white;
+            padding-top: 50px;
+            padding-right: 30px;
+            padding-bottom: 80px;
+            padding-left: 80px;
+            margin-left: 0px; 
+            margin-right: 0px;
+            text-align: center;
+            font-size: 50px;
+            color: white;
+        }
+        footer {
+            background-color: rgb(243, 242, 242);
+            padding: 50px;
+            text-align: center;
+            color: white;
+           
+        }
+
+        body{
+            margin-left: 0px; 
+            margin-right: 0px;
+        }
+
+        #example1 {
+            background-image: url("lawyer.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            padding: 420px;
+            position: relative;
+        }
+        
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .box {
+            float: right;
+            width: 24%;
+            margin-left: 10px; 
+            margin-right: 90px;
+        }
+
+        p1 {
+            color: white;
+            font-size: 18px;
+        }
+
+        p2{
+            color: white;
+            font-size: 40px;
+        }
+
+        p3{
+            color: yellow;
+            font-size: 14px;
+        }
+        
+        .coloredbox {
+            width: 430px;
+            height: 500px;
+            display: inline-block;
+            background-color: #ccc;
+            position: absolute;
+            z-index: 0;
+            left:180px;
+            top: 160px;
+            
+        }
+
+        .emailbox {
+            position: absolute;
+            z-index: 10;
+            left: 220px;
+            top: 230px;
+        }
+
+        .button1 {
+        background-color: white;
+        float: left;
+        color: black;
+        font-size: 16px;
+        border: 2px solid #FFFFFF;
+        padding: 10px 24px;
+        }
+
+        .button1:hover {
+        background-color: #555555;
+        color: white;
+        }
+
+        .button2 {
+        background-color: white;
+        float: right;
+        color: rgba(167, 167, 167, 0.945);
+        border: 2px solid #FFFFFF;
+        margin-right: 15px;
+        padding: 4px 12px;
+        }
+
+        .textarea1{
+            height: 20px;
+            line-height: 20px
+        }
+        .button2:hover {
+        background-color: #555555;
+        color: white;
+        }
+        .button4 {
+        background-color: white;
+        float: right;
+        color: rgb(255, 255, 255);
+        border: 2px solid #FFFFFF;
+        margin-right: 15px;
+        padding: 4px 8px;
+        }
+
+        .button3 {
+        background-color: rgb(248, 213, 56);
+        color: black;
+        border: 2px solid rgb(248, 213, 56);
+        padding: 12px 15px;
+        }
+
+        .button3:hover {
+        background-color: white;
+        color: black;
+        }
+        </style>
+
+</head>
+<body>
+    <header>
+       
+        <button class="button button1" onclick="window.open('https://xinleiyuusc.github.io/xinleiyu.github.io/Homework3/page2.html','_bank');">MENU</button>
+        <button class="button button4">Services</button>
+        <button class="button button2" onclick="window.open('https://xinleiyuusc.github.io/xinleiyu.github.io/Homework3/page2.html','_bank');">Services</button>
+        <button class="button button2" onclick="window.open('https://xinleiyuusc.github.io/xinleiyu.github.io/Homework3/page2.html','_bank');">Projects</button>
+        <button class="button button2" onclick="window.open('https://xinleiyuusc.github.io/xinleiyu.github.io/Homework3/page2.html','_bank');">About</button>
+    </header>
+    
+    <div id ="example1">
+        <div class="coloredbox" style="background-color: #0a4369;"></div>
+        <div class = "emailbox">
+            <p1 style="font-family: Arial">DON'T WAIT<br><p1>
+            <p2>IMPROVE<br> YOUR BUSINESS<br>TODAY!</p2>
+            <br><br>
+            <p3><em>- Get your hands on Biz Optima -</em><br></p3>
+            <br><br>
+            <textarea  name="textarea1" rows="2" cols="42" style="font-family: Arial" >Email</textarea>
+            <br><br>
+            <button class="button button3"  onclick="window.open('https://xinleiyuusc.github.io/xinleiyu.github.io/Homework3/page2.html','_bank');" style="font-family: Arial">SIGN UP FOR FREE!</button>
+        </div>
+    </div> 
+    
+      
+    <section>
+        <br><br> <br><br> <br><br><br>
+        <div class="box" style="background-color:white">
+            <p style="font-family: Arial">AMAZING FEATURE#3</p>
+            <p style="color:#7e7e7e" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed malesuada faucibus ex nec ultricies. Donec mattis<br>egestas nisi non pretium. Suspendisse nec eros ut erat<br>facilisis maximus. In congue et leo in varius. <br>Vestibulum sit amet fells omare, commodo orci ut,<br>feugiat lorem. </p>
+        </div>
+        <div class="box" style="background-color:white">
+            <p style="font-family: Arial">AMAZING FEATURE#2</p>
+            <p style="color:#7e7e7e">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed malesuada faucibus ex nec ultricies. Donec mattis<br>egestas nisi non pretium. Suspendisse nec eros ut erat<br>facilisis maximus. In congue et leo in varius. <br>Vestibulum sit amet fells omare, commodo orci ut,<br>feugiat lorem. </p>
+        </div>
+        <div class="box" style="background-color: white">
+            <p style="font-family: Arial">AMAZING FEATURE#1</p>
+            <p style="color:#7e7e7e" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Sed malesuada faucibus ex nec ultricies. Donec mattis<br>egestas nisi non pretium. Suspendisse nec eros ut erat<br>facilisis maximus. In congue et leo in varius. <br>Vestibulum sit amet fells omare, commodo orci ut,<br>feugiat lorem. </p>
+        </div>
+        
+    </section>
+    <br><br> <br><br> <br><br>
+    <footer>
+        <br><br> <br>
+    </footer>
+     
+
+</body>
+</html>
